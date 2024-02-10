@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Assistant</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #007bff, #004785);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        a, .btn {
+            display: inline-block;
+            background-color: #238af9;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-out;
+        }
+        a:hover, .btn:hover {
+            background-color: #0056b3;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box; /* Ensures padding does not affect overall width */
+            appearance: none; /* Removes default styling of select dropdown */
+            background-color: #fff;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* Changed from fixed to relative */
+            bottom: 0;
+            width: 100%;
+            clear: both;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Language Learning Assistant</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h2>Select Language</h2>
+                <form>
+                    <label for="language-select">Choose a language:</label>
+                    <select id="language-select" name="language">
+                        <option value="">--Please choose an option--</option>
+                        <option value="english">English</option>
+                        <option value="telugu">Telugu</option>
+                        <option value="hindi">Hindi</option>
+                        <option value="kannada">Kannada</option>
+                        <option value="tamil">Tamil</option>
+                    </select>
+                    <button type="submit" class="btn">Select</button>
+                </form>
+            </section>
+            <section>
+                <h2>Lesson 1: Basics</h2>
+                <p>Learn greetings and common phrases.</p>
+                <a href="#">Start Lesson</a>
+            </section>
+            <section>
+                <h2>Lesson 2: Vocabulary</h2>
+                <p>Expand your vocabulary with new words.</p>
+                <a href="#">Start Lesson</a>
+            </section>
+            <section>
+                <h2>Lesson 3: Grammar</h2>
+                <p>Understand the basics of grammar.</p>
+                <a href="#">Start Lesson</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Language Learning Assistant</p>
+    </footer>
+</body>
+</html>
